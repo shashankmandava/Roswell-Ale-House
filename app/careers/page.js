@@ -1,0 +1,2 @@
+import CareersForm from '@/components/CareersForm';
+export default function Careers(){return <><section className="page-hero"><div className="container"><div className="eyebrow">Join The Team</div><h1>Careers</h1><p className="muted">Tell us a little about yourself and the position you're interested in.</p></div></section><section className="section"><div className="container"><CareersForm/></div></section></>}
