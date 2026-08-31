@@ -13,8 +13,8 @@ export default function Header(){
   return <header className="header">
     <div className="container nav">
       <Link href="/" className="brand" onClick={()=>setOpen(false)}>
-        <img src="/roswell-ale-house-logo.png" alt="Roswell Ale House logo" />
-        <strong>ROSWELL ALE HOUSE</strong>
+        <img src="/Roswell Ale House Logo.jpeg" alt="Roswell Ale House logo" />
+        {/* <strong>ROSWELL ALE HOUSE</strong> */}
       </Link>
       <nav className={`nav-links ${open?'open':''}`}>
         {links.map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}
