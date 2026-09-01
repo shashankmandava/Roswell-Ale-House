@@ -172,3 +172,85 @@ textarea { min-height:140px; resize:vertical; }
   color: var(--gold);
   font-weight: 700;
 }
+
+/* ========================================
+   PUBLIC GALLERY
+======================================== */
+
+.gallery-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 22px;
+  gap: 22px;
+}
+
+.gallery-media-card {
+  overflow: hidden;
+
+  border: 1px solid #292929;
+  border-radius: 8px;
+
+  background: #111;
+}
+
+.gallery-media-card.featured {
+  grid-column: span 2;
+}
+
+.gallery-media-preview {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #080808;
+}
+
+.gallery-media-preview img,
+.gallery-media-preview video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.gallery-featured-label {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 6px 9px;
+
+  border-radius: 4px;
+
+  background: #d4a84f;
+  color: #111;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.gallery-media-info {
+  padding: 18px;
+}
+
+.gallery-media-info h3 {
+  margin: 5px 0 0;
+}
+
+@media (max-width: 750px) {
+  .gallery-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-media-card.featured {
+    grid-column: auto;
+  }
+}

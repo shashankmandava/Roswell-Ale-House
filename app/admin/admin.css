@@ -1,0 +1,5518 @@
+.adminApp {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f4f2;
+  color: #171717;
+}
+
+
+/* ================================
+   SIDEBAR
+================================ */
+
+.adminSidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 270px;
+  height: 100vh;
+
+  background: #0c0c0c;
+  border-right: 1px solid #262626;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+}
+
+
+.adminBrand {
+  padding: 30px 28px 26px;
+  border-bottom: 1px solid #292929;
+}
+
+
+.adminBrandSmall {
+  color: #d4a84f;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+
+.adminBrandLarge {
+  color: #f4f0e8;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}
+
+
+.adminPortalText {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 8px;
+}
+
+
+.adminNavigation {
+  padding: 22px 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  flex: 1;
+}
+
+
+.adminNavItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 13px 14px;
+
+  color: #aaa;
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.adminNavItem:hover {
+  background: #181818;
+  color: white;
+}
+
+
+.adminNavItem.active {
+  background: #201616;
+  color: #fff;
+  border-left: 3px solid #e41f2b;
+}
+
+
+.adminNavIcon {
+  width: 22px;
+
+  color: #d4a84f;
+
+  font-size: 17px;
+  text-align: center;
+}
+
+
+.adminSidebarBottom {
+  padding: 20px;
+
+  border-top: 1px solid #292929;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.viewWebsite {
+  color: #d4a84f;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.adminLogout {
+  padding: 10px;
+
+  border: 1px solid #333;
+  border-radius: 5px;
+
+  background: #171717;
+  color: #777;
+
+  cursor: not-allowed;
+}
+
+
+.adminSidebarBottom small {
+  color: #555;
+  font-size: 10px;
+}
+
+
+/* ================================
+   MAIN AREA
+================================ */
+
+.adminMain {
+  width: calc(100% - 270px);
+  margin-left: 270px;
+  min-height: 100vh;
+}
+
+
+.adminTopbar {
+  min-height: 90px;
+
+  background: white;
+  border-bottom: 1px solid #dedede;
+
+  padding: 18px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.adminTopbar h1 {
+  margin: 2px 0 0;
+
+  font-size: 26px;
+  color: #111;
+}
+
+
+.adminEyebrow {
+  margin: 0;
+
+  color: #b58a38;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+
+.adminAccount {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+
+.adminAvatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #171717;
+  color: #d4a84f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+}
+
+
+.adminAccount strong,
+.adminAccount span {
+  display: block;
+}
+
+
+.adminAccount strong {
+  font-size: 13px;
+}
+
+
+.adminAccount span {
+  margin-top: 2px;
+  color: #888;
+  font-size: 11px;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.adminContent {
+  padding: 40px;
+}
+
+
+.adminWelcome {
+  margin-bottom: 30px;
+}
+
+
+.adminWelcome h2 {
+  margin: 5px 0 5px;
+
+  font-size: 34px;
+}
+
+
+.adminWelcome > div > p:last-child {
+  margin: 0;
+  color: #777;
+}
+
+
+/* ================================
+   STATS
+================================ */
+
+.adminStats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+
+.adminStatCard {
+  background: white;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+
+.adminStatCard span {
+  display: block;
+
+  color: #777;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-bottom: 14px;
+}
+
+
+.adminStatCard strong {
+  display: block;
+
+  font-size: 36px;
+  line-height: 1;
+
+  color: #111;
+}
+
+
+.adminStatCard p {
+  margin: 10px 0 0;
+
+  color: #999;
+  font-size: 11px;
+}
+
+
+/* ================================
+   PANEL
+================================ */
+
+.adminPanel {
+  background: white;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  padding: 28px;
+}
+
+
+.adminPanelHeader {
+  margin-bottom: 22px;
+}
+
+
+.adminPanelHeader h2 {
+  margin: 5px 0 0;
+
+  font-size: 22px;
+}
+
+
+/* ================================
+   QUICK LINKS
+================================ */
+
+.adminQuickGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+
+.adminQuickCard {
+  min-height: 140px;
+
+  border: 1px solid #e2e2df;
+  border-radius: 7px;
+
+  padding: 20px;
+
+  text-decoration: none;
+  color: #171717;
+
+  display: flex;
+  gap: 15px;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.adminQuickCard:hover {
+  transform: translateY(-3px);
+
+  border-color: #c9a354;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+.adminQuickCard > span {
+  color: #d4a84f;
+  font-size: 23px;
+}
+
+
+.adminQuickCard strong {
+  font-size: 14px;
+}
+
+
+.adminQuickCard p {
+  margin: 8px 0 0;
+
+  color: #888;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+
+  .adminStats {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .adminQuickGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .adminSidebar {
+    width: 75px;
+  }
+
+  .adminBrand {
+    padding: 25px 10px;
+  }
+
+  .adminBrandSmall,
+  .adminBrandLarge,
+  .adminPortalText {
+    display: none;
+  }
+
+  .adminNavItem span:last-child {
+    display: none;
+  }
+
+  .adminNavItem {
+    justify-content: center;
+  }
+
+  .adminSidebarBottom {
+    display: none;
+  }
+
+  .adminMain {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+  }
+
+  .adminContent {
+    padding: 25px;
+  }
+
+  .adminTopbar {
+    padding: 15px 25px;
+  }
+
+  .adminStats,
+  .adminQuickGrid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ========================================
+   ADMIN PAGE INTRO
+======================================== */
+
+.adminPageIntro {
+  margin-bottom: 28px;
+}
+
+.adminPageIntro h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.adminPageIntro > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* ========================================
+   TESTIMONIAL TABS
+======================================== */
+
+.testimonialTabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.testimonialTab {
+  border: 1px solid #dededb;
+  background: #fff;
+  color: #777;
+
+  padding: 11px 17px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.testimonialTab:hover {
+  border-color: #c8a24c;
+}
+
+.testimonialTab.active {
+  background: #171717;
+  border-color: #171717;
+  color: #fff;
+}
+
+.testimonialTab span {
+  min-width: 22px;
+  height: 22px;
+
+  padding: 0 6px;
+
+  border-radius: 20px;
+
+  background: #eee;
+
+  color: #555;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+}
+
+.testimonialTab.active span {
+  background: #d4a84f;
+  color: #111;
+}
+
+
+/* ========================================
+   TESTIMONIAL PANEL
+======================================== */
+
+.testimonialAdminPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.testimonialPanelHeader {
+  padding: 22px 25px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.testimonialPanelHeader h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.testimonialPanelHeader p {
+  margin: 4px 0 0;
+
+  color: #999;
+  font-size: 11px;
+}
+
+
+/* ========================================
+   TESTIMONIAL LIST
+======================================== */
+
+.testimonialAdminList {
+  padding: 0 25px;
+}
+
+.testimonialAdminCard {
+  padding: 25px 0;
+
+  border-bottom: 1px solid #ececea;
+}
+
+.testimonialAdminCard:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================
+   CUSTOMER
+======================================== */
+
+.testimonialAdminTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.testimonialCustomer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonialInitial {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #171717;
+  color: #d4a84f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.testimonialCustomer strong,
+.testimonialCustomer span {
+  display: block;
+}
+
+.testimonialCustomer strong {
+  font-size: 14px;
+}
+
+.testimonialCustomer span {
+  margin-top: 4px;
+
+  color: #999;
+  font-size: 10px;
+}
+
+
+/* ========================================
+   STARS
+======================================== */
+
+.testimonialStars {
+  color: #d4a84f;
+
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.testimonialStars span {
+  color: #ddd;
+}
+
+
+/* ========================================
+   REVIEW
+======================================== */
+
+.testimonialAdminCard blockquote {
+  margin: 20px 0;
+
+  padding-left: 18px;
+
+  border-left: 3px solid #d4a84f;
+
+  color: #555;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   FOOTER / ACTIONS
+======================================== */
+
+.testimonialAdminFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.testimonialStatus {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.testimonialStatus.pending {
+  background: #fff2d7;
+  color: #9c6a00;
+}
+
+.testimonialStatus.approved {
+  background: #e1f5e7;
+  color: #28763c;
+}
+
+.testimonialStatus.rejected {
+  background: #fde5e5;
+  color: #a43131;
+}
+
+.testimonialActions {
+  display: flex;
+  gap: 8px;
+}
+
+.testimonialActions button {
+  padding: 8px 13px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.testimonialActions button:hover {
+  transform: translateY(-1px);
+}
+
+.testimonialApprove {
+  border: 1px solid #2f8b49;
+  background: #2f8b49;
+  color: white;
+}
+
+.testimonialApprove:hover {
+  background: #26743c;
+}
+
+.testimonialReject {
+  border: 1px solid #c84a4a;
+  background: transparent;
+  color: #b53838;
+}
+
+.testimonialReject:hover {
+  background: #fff0f0;
+}
+
+.testimonialPending {
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #666;
+}
+
+.testimonialPending:hover {
+  background: #f5f5f3;
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.testimonialEmpty {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.testimonialEmpty > div {
+  color: #d4a84f;
+  font-size: 30px;
+}
+
+.testimonialEmpty h3 {
+  margin: 12px 0 5px;
+}
+
+.testimonialEmpty p {
+  margin: 0;
+
+  color: #999;
+  font-size: 12px;
+}
+
+
+/* ========================================
+   TESTIMONIAL RESPONSIVE
+======================================== */
+
+@media (max-width: 750px) {
+
+  .testimonialTabs {
+    overflow-x: auto;
+  }
+
+  .testimonialTab {
+    flex-shrink: 0;
+  }
+
+  .testimonialAdminTop {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .testimonialAdminFooter {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .testimonialActions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+}
+
+/* ========================================
+   MENU MANAGEMENT
+======================================== */
+
+.menuAdminHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.menuAdminHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.menuAdminHeading > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.menuAddButton {
+  border: none;
+  border-radius: 6px;
+
+  padding: 12px 18px;
+
+  background: #171717;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.menuAddButton:hover {
+  background: #2a2a2a;
+}
+
+
+/* ========================================
+   MENU STATS
+======================================== */
+
+.menuAdminStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.menuAdminStats > div {
+  padding: 18px 20px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 7px;
+}
+
+.menuAdminStats span {
+  display: block;
+
+  color: #888;
+  font-size: 11px;
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.menuAdminStats strong {
+  font-size: 27px;
+}
+
+
+/* ========================================
+   MENU PANEL
+======================================== */
+
+.menuManagementPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.menuTypeTabs {
+  display: flex;
+
+  padding: 0 25px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.menuTypeTab {
+  padding: 18px 5px;
+
+  margin-right: 30px;
+
+  border: none;
+  border-bottom: 3px solid transparent;
+
+  background: transparent;
+
+  color: #888;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menuTypeTab.active {
+  color: #171717;
+  border-bottom-color: #d4a84f;
+}
+
+.menuTypeTab span {
+  min-width: 22px;
+
+  padding: 3px 7px;
+
+  border-radius: 20px;
+
+  background: #eeeeeb;
+
+  font-size: 9px;
+}
+
+
+/* ========================================
+   CATEGORY FILTERS
+======================================== */
+
+.menuCategoryFilters {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+
+  padding: 18px 25px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.menuCategoryButton {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  background: #fff;
+  color: #777;
+
+  padding: 7px 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.menuCategoryButton:hover {
+  border-color: #c9a34c;
+}
+
+.menuCategoryButton.active {
+  background: #171717;
+  border-color: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   MENU TABLE
+======================================== */
+
+.menuAdminTableWrapper {
+  overflow-x: auto;
+}
+
+.menuAdminTable {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.menuAdminTable th {
+  padding: 14px 20px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e5e5e2;
+
+  color: #999;
+
+  text-align: left;
+
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.menuAdminTable td {
+  padding: 18px 20px;
+
+  border-bottom: 1px solid #ededeb;
+
+  vertical-align: middle;
+}
+
+.menuAdminTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.menuAdminTable tbody tr:hover {
+  background: #fcfcfa;
+}
+
+.menuItemAdminInfo {
+  max-width: 450px;
+}
+
+.menuItemAdminInfo strong {
+  display: block;
+
+  color: #171717;
+  font-size: 13px;
+}
+
+.menuItemAdminInfo span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #888;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.menuCategoryLabel {
+  display: inline-block;
+
+  padding: 6px 9px;
+
+  background: #f2f0e9;
+  color: #8a6c30;
+
+  border-radius: 4px;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.menuPrice {
+  font-size: 13px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   AVAILABILITY
+======================================== */
+
+.menuAvailability {
+  border: none;
+  background: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.menuAvailability span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.menuAvailability.available {
+  color: #2d7840;
+}
+
+.menuAvailability.available span {
+  background: #36a653;
+}
+
+.menuAvailability.unavailable {
+  color: #a23c3c;
+}
+
+.menuAvailability.unavailable span {
+  background: #d84d4d;
+}
+
+
+/* ========================================
+   ROW ACTIONS
+======================================== */
+
+.menuRowActions {
+  display: flex;
+  gap: 7px;
+}
+
+.menuRowActions button {
+  padding: 7px 10px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.menuEditButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #555;
+}
+
+.menuEditButton:hover {
+  border-color: #c9a34c;
+}
+
+.menuDeleteButton {
+  border: 1px solid #efcccc;
+
+  background: #fff;
+  color: #b23b3b;
+}
+
+.menuDeleteButton:hover {
+  background: #fff2f2;
+}
+
+
+/* ========================================
+   EMPTY MENU
+======================================== */
+
+.menuEmptyState {
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+.menuEmptyState h3 {
+  margin: 0 0 5px;
+}
+
+.menuEmptyState p {
+  margin: 0;
+
+  color: #999;
+  font-size: 11px;
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.menuModalBackdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.menuModal {
+  width: min(620px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.menuModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.menuModalHeader h2 {
+  margin: 4px 0 0;
+  font-size: 22px;
+}
+
+.menuModalClose {
+  border: none;
+  background: transparent;
+
+  color: #777;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.menuItemForm {
+  padding: 27px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.menuItemForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.menuItemForm input,
+.menuItemForm textarea,
+.menuItemForm select {
+  width: 100%;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+
+  padding: 11px 12px;
+
+  color: #222;
+
+  font: inherit;
+
+  outline: none;
+}
+
+.menuItemForm input:focus,
+.menuItemForm textarea:focus,
+.menuItemForm select:focus {
+  border-color: #c49a43;
+
+  box-shadow:
+    0 0 0 3px rgba(196, 154, 67, 0.1);
+}
+
+.menuItemForm textarea {
+  resize: vertical;
+}
+
+.menuFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.menuPriceInput {
+  position: relative;
+}
+
+.menuPriceInput > span {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #888;
+}
+
+.menuPriceInput input {
+  padding-left: 27px;
+}
+
+
+/* ========================================
+   FORM AVAILABILITY
+======================================== */
+
+.menuAvailabilityCheckbox {
+  flex-direction: row !important;
+  align-items: flex-start;
+
+  padding: 15px;
+
+  border: 1px solid #e0e0dd;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.menuAvailabilityCheckbox input {
+  width: auto;
+
+  margin-top: 3px;
+}
+
+.menuAvailabilityCheckbox strong,
+.menuAvailabilityCheckbox span {
+  display: block;
+}
+
+.menuAvailabilityCheckbox strong {
+  font-size: 11px;
+}
+
+.menuAvailabilityCheckbox span {
+  margin-top: 3px;
+
+  color: #999;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+/* ========================================
+   FORM BUTTONS
+======================================== */
+
+.menuFormActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+
+  padding-top: 5px;
+}
+
+.menuFormActions button {
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.menuCancelButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #666;
+}
+
+.menuSaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   MENU RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .menuAdminStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .menuAdminHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .menuAdminStats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menuAdminTable {
+    min-width: 800px;
+  }
+
+  .menuFormRow {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ========================================
+   CAREER APPLICATIONS
+======================================== */
+
+.applicationAdminHeading {
+  margin-bottom: 25px;
+}
+
+.applicationAdminHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.applicationAdminHeading > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+
+/* ========================================
+   APPLICATION STATS
+======================================== */
+
+.applicationStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.applicationStats > div {
+  padding: 18px 20px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 7px;
+}
+
+.applicationStats span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.applicationStats strong {
+  font-size: 27px;
+}
+
+
+/* ========================================
+   APPLICATION PANEL
+======================================== */
+
+.applicationPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   STATUS TABS
+======================================== */
+
+.applicationTabs {
+  display: flex;
+  gap: 5px;
+
+  padding: 15px 20px;
+
+  border-bottom: 1px solid #e7e7e4;
+
+  overflow-x: auto;
+}
+
+.applicationTab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.applicationTab:hover {
+  background: #f5f5f2;
+}
+
+.applicationTab.active {
+  background: #171717;
+  color: #fff;
+}
+
+.applicationTab span {
+  min-width: 20px;
+
+  padding: 3px 6px;
+
+  border-radius: 20px;
+
+  background: #eee;
+  color: #555;
+
+  font-size: 9px;
+
+  text-align: center;
+}
+
+.applicationTab.active span {
+  background: #d4a84f;
+  color: #171717;
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.applicationFilters {
+  display: flex;
+  gap: 12px;
+
+  padding: 18px 20px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.applicationFilters input,
+.applicationFilters select {
+  padding: 10px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #333;
+
+  outline: none;
+}
+
+.applicationFilters input {
+  flex: 1;
+}
+
+.applicationFilters select {
+  min-width: 180px;
+}
+
+.applicationFilters input:focus,
+.applicationFilters select:focus {
+  border-color: #c49a43;
+}
+
+
+/* ========================================
+   APPLICATION TABLE
+======================================== */
+
+.applicationTableWrapper {
+  overflow-x: auto;
+}
+
+.applicationTable {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.applicationTable th {
+  padding: 14px 20px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e5e5e2;
+
+  color: #999;
+
+  text-align: left;
+
+  font-size: 9px;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.applicationTable td {
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #ededeb;
+
+  vertical-align: middle;
+}
+
+.applicationTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.applicationTable tbody tr:hover {
+  background: #fcfcfa;
+}
+
+
+/* ========================================
+   APPLICANT
+======================================== */
+
+.applicationApplicant {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.applicationInitial {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #171717;
+  color: #d4a84f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.applicationApplicant strong,
+.applicationApplicant span {
+  display: block;
+}
+
+.applicationApplicant strong {
+  color: #222;
+  font-size: 12px;
+}
+
+.applicationApplicant span {
+  margin-top: 3px;
+
+  color: #999;
+
+  font-size: 10px;
+}
+
+.applicationPosition {
+  display: inline-block;
+
+  padding: 6px 9px;
+
+  border-radius: 4px;
+
+  background: #f2f0e9;
+  color: #886a2e;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.applicationDate {
+  color: #777;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+
+/* ========================================
+   APPLICATION STATUS
+======================================== */
+
+.applicationStatus {
+  display: inline-block;
+
+  padding: 6px 9px;
+
+  border-radius: 20px;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+}
+
+.applicationStatus.new {
+  background: #e4efff;
+  color: #32649d;
+}
+
+.applicationStatus.reviewed {
+  background: #f1eddf;
+  color: #7d692f;
+}
+
+.applicationStatus.interview {
+  background: #fff1d6;
+  color: #9b6800;
+}
+
+.applicationStatus.hired {
+  background: #e1f5e7;
+  color: #28763c;
+}
+
+.applicationStatus.rejected {
+  background: #fde5e5;
+  color: #a43131;
+}
+
+
+/* ========================================
+   VIEW BUTTON
+======================================== */
+
+.applicationViewButton {
+  padding: 8px 11px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  background: #fff;
+  color: #555;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.applicationViewButton:hover {
+  border-color: #c49a43;
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.applicationEmpty {
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+.applicationEmpty h3 {
+  margin: 0 0 5px;
+}
+
+.applicationEmpty p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   APPLICATION MODAL
+======================================== */
+
+.applicationModalBackdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applicationModal {
+  width: min(680px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.applicationModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.applicationModalHeader h2 {
+  margin: 4px 0 3px;
+
+  font-size: 23px;
+}
+
+.applicationModalHeader > div > span {
+  color: #999;
+
+  font-size: 10px;
+}
+
+.applicationModalClose {
+  border: none;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   MODAL BODY
+======================================== */
+
+.applicationModalBody {
+  padding: 27px;
+}
+
+.applicationStatusControl {
+  margin-bottom: 22px;
+
+  padding: 16px;
+
+  background: #fafaf7;
+
+  border: 1px solid #e4e4e0;
+  border-radius: 6px;
+}
+
+.applicationStatusControl label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: #555;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.applicationStatusControl select {
+  min-width: 170px;
+
+  padding: 9px 11px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  background: #fff;
+}
+
+.applicationDetailGrid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+.applicationDetailGrid > div {
+  padding: 15px;
+
+  border: 1px solid #e5e5e2;
+  border-radius: 6px;
+}
+
+.applicationDetailGrid span,
+.applicationDetailGrid strong {
+  display: block;
+}
+
+.applicationDetailGrid span {
+  margin-bottom: 5px;
+
+  color: #999;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.applicationDetailGrid strong {
+  color: #333;
+
+  font-size: 12px;
+
+  overflow-wrap: anywhere;
+}
+
+.applicationDetailSection {
+  margin-top: 18px;
+}
+
+.applicationDetailSection > span {
+  color: #999;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.applicationDetailSection p {
+  margin: 7px 0 0;
+
+  color: #555;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   MODAL FOOTER
+======================================== */
+
+.applicationModalFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 18px 27px;
+
+  border-top: 1px solid #e7e7e4;
+
+  background: #fafaf8;
+}
+
+.applicationModalFooter button {
+  padding: 10px 14px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.applicationDeleteButton {
+  border: 1px solid #e2bcbc;
+
+  background: #fff;
+  color: #b13c3c;
+}
+
+.applicationDeleteButton:hover {
+  background: #fff1f1;
+}
+
+.applicationDoneButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .applicationStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .applicationFilters {
+    flex-direction: column;
+  }
+
+  .applicationFilters select {
+    width: 100%;
+  }
+
+  .applicationTable {
+    min-width: 800px;
+  }
+
+  .applicationDetailGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .applicationStatusControl label {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .applicationStatusControl select {
+    width: 100%;
+  }
+
+}
+
+/* ========================================
+   OFFERS MANAGEMENT
+======================================== */
+
+.offersAdminHeading {
+  margin-bottom: 25px;
+}
+
+.offersAdminHeading h2 {
+  margin: 5px 0 6px;
+
+  font-size: 32px;
+}
+
+.offersAdminHeading > div > p:last-child {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   OFFER STATS
+======================================== */
+
+.offersAdminStats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.offersAdminStats > div {
+  padding: 18px 20px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+
+  border-radius: 7px;
+}
+
+.offersAdminStats span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.offersAdminStats strong {
+  font-size: 27px;
+}
+
+
+/* ========================================
+   OFFERS PANEL
+======================================== */
+
+.offersAdminPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.offersAdminPanelHeader {
+  padding: 22px 25px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.offersAdminPanelHeader h3 {
+  margin: 5px 0 0;
+
+  font-size: 19px;
+}
+
+
+/* ========================================
+   OFFER LIST
+======================================== */
+
+.offersAdminList {
+  padding: 0 25px;
+}
+
+.offersAdminCard {
+  min-height: 100px;
+
+  display: grid;
+
+  grid-template-columns:
+    130px
+    minmax(250px, 1fr)
+    120px
+    145px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #ececea;
+
+  transition: opacity 0.2s ease;
+}
+
+.offersAdminCard:last-child {
+  border-bottom: none;
+}
+
+.offersAdminCard.inactive {
+  opacity: 0.5;
+}
+
+
+/* ========================================
+   DAY
+======================================== */
+
+.offersAdminDay {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.offersAdminDay > span {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #171717;
+
+  color: #d4a84f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 11px;
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.offersAdminDay strong {
+  font-size: 12px;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.offersAdminDescription > span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #aaa;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.offersAdminDescription h3 {
+  margin: 0;
+
+  color: #222;
+
+  font-size: 15px;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.offerStatusButton {
+  border: none;
+
+  background: transparent;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.offerStatusButton > span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.offerStatusButton.active {
+  color: #2c7a40;
+}
+
+.offerStatusButton.active > span {
+  background: #36a653;
+}
+
+.offerStatusButton.inactive {
+  color: #999;
+}
+
+.offerStatusButton.inactive > span {
+  background: #aaa;
+}
+
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.offersAdminActions {
+  display: flex;
+
+  gap: 7px;
+
+  justify-content: flex-end;
+}
+
+.offersAdminActions button {
+  padding: 7px 10px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.offerEditButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+
+  color: #555;
+}
+
+.offerEditButton:hover {
+  border-color: #c49a43;
+}
+
+.offerResetButton {
+  border: 1px solid #ddd;
+
+  background: #fafafa;
+
+  color: #888;
+}
+
+
+/* ========================================
+   NOTICE
+======================================== */
+
+.offersAdminNotice {
+  margin-top: 18px;
+
+  padding: 16px 18px;
+
+  border: 1px solid #e3d7b9;
+
+  border-radius: 6px;
+
+  background: #fffaf0;
+}
+
+.offersAdminNotice strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #705826;
+
+  font-size: 11px;
+}
+
+.offersAdminNotice p {
+  margin: 0;
+
+  color: #8b7954;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   OFFER MODAL
+======================================== */
+
+.offerModalBackdrop {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 5000;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.offerModal {
+  width: min(560px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.offerModalHeader {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.offerModalHeader h2 {
+  margin: 4px 0 0;
+
+  font-size: 22px;
+}
+
+.offerModalClose {
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   OFFER FORM
+======================================== */
+
+.offerEditForm {
+  padding: 27px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.offerEditForm label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.offerEditForm input {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d7d7d4;
+
+  border-radius: 5px;
+
+  background: #fff;
+
+  color: #222;
+
+  outline: none;
+}
+
+.offerEditForm input:focus {
+  border-color: #c49a43;
+
+  box-shadow:
+    0 0 0 3px rgba(196, 154, 67, 0.1);
+}
+
+.offerEditForm input:disabled {
+  background: #f5f5f3;
+
+  color: #888;
+}
+
+
+/* ========================================
+   WEBSITE PREVIEW
+======================================== */
+
+.offerFormPreview {
+  padding: 16px;
+
+  border: 1px solid #e0e0dc;
+
+  border-radius: 6px;
+
+  background: #fafaf7;
+}
+
+.offerFormPreview > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #aaa;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.offerFormPreview > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.offerFormPreview strong {
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 5px;
+
+  background: #171717;
+
+  color: #d4a84f;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 11px;
+}
+
+.offerFormPreview h3 {
+  margin: 0;
+
+  font-size: 15px;
+}
+
+
+/* ========================================
+   OFFER FORM ACTIONS
+======================================== */
+
+.offerFormActions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 9px;
+}
+
+.offerFormActions button {
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.offerCancelButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+
+  color: #666;
+}
+
+.offerSaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+
+  color: #fff;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+  .offersAdminCard {
+    grid-template-columns:
+      120px
+      1fr
+      100px;
+  }
+
+  .offersAdminActions {
+    grid-column: 2 / 4;
+
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .offersAdminStats {
+    grid-template-columns: 1fr;
+  }
+
+  .offersAdminCard {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .offersAdminActions {
+    grid-column: auto;
+  }
+
+}
+
+/* ========================================
+   EVENTS MANAGEMENT
+======================================== */
+
+.eventsAdminHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.eventsAdminHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.eventsAdminHeading > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.eventAddButton {
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #171717;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   STATS
+======================================== */
+
+.eventsAdminStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.eventsAdminStats > div {
+  padding: 18px 20px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 7px;
+}
+
+.eventsAdminStats span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.eventsAdminStats strong {
+  font-size: 27px;
+}
+
+
+/* ========================================
+   EVENTS PANEL
+======================================== */
+
+.eventsAdminPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.eventsAdminPanelHeader {
+  padding: 22px 25px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.eventsAdminPanelHeader h3 {
+  margin: 5px 0 0;
+  font-size: 19px;
+}
+
+.eventsAdminList {
+  padding: 0 25px;
+}
+
+
+/* ========================================
+   EVENT CARD
+======================================== */
+
+.eventAdminCard {
+  display: grid;
+
+  grid-template-columns:
+    120px
+    minmax(300px, 1fr)
+    110px
+    145px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #ececea;
+
+  transition: opacity 0.2s ease;
+}
+
+.eventAdminCard:last-child {
+  border-bottom: none;
+}
+
+.eventAdminCard.inactive {
+  opacity: 0.5;
+}
+
+
+/* ========================================
+   TYPE
+======================================== */
+
+.eventAdminType span {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  border-radius: 4px;
+
+  background: #f2f0e9;
+  color: #876b31;
+
+  font-size: 9px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   EVENT INFORMATION
+======================================== */
+
+.eventAdminInfo h3 {
+  margin: 0 0 6px;
+
+  color: #222;
+
+  font-size: 15px;
+}
+
+.eventAdminSchedule {
+  display: flex;
+  gap: 7px;
+
+  margin-bottom: 7px;
+
+  color: #9b7b3d;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.eventAdminInfo p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #888;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.eventStatusButton {
+  border: none;
+
+  background: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.eventStatusButton > span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.eventStatusButton.active {
+  color: #2c7a40;
+}
+
+.eventStatusButton.active > span {
+  background: #36a653;
+}
+
+.eventStatusButton.inactive {
+  color: #999;
+}
+
+.eventStatusButton.inactive > span {
+  background: #aaa;
+}
+
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.eventAdminActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.eventAdminActions button {
+  padding: 7px 10px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.eventEditButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #555;
+}
+
+.eventEditButton:hover {
+  border-color: #c49a43;
+}
+
+.eventDeleteButton {
+  border: 1px solid #efcccc;
+
+  background: #fff;
+  color: #b23b3b;
+}
+
+.eventDeleteButton:hover {
+  background: #fff2f2;
+}
+
+
+/* ========================================
+   NOTICE
+======================================== */
+
+.eventsAdminNotice {
+  margin-top: 18px;
+
+  padding: 16px 18px;
+
+  border: 1px solid #e3d7b9;
+  border-radius: 6px;
+
+  background: #fffaf0;
+}
+
+.eventsAdminNotice strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #705826;
+
+  font-size: 11px;
+}
+
+.eventsAdminNotice p {
+  margin: 0;
+
+  color: #8b7954;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.eventsEmpty {
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+.eventsEmpty h3 {
+  margin: 0 0 5px;
+}
+
+.eventsEmpty p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   EVENT MODAL
+======================================== */
+
+.eventModalBackdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventModal {
+  width: min(620px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.eventModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.eventModalHeader h2 {
+  margin: 4px 0 0;
+
+  font-size: 22px;
+}
+
+.eventModalClose {
+  border: none;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   EVENT FORM
+======================================== */
+
+.eventEditForm {
+  padding: 27px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.eventEditForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.eventEditForm input,
+.eventEditForm textarea,
+.eventEditForm select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #222;
+
+  font: inherit;
+
+  outline: none;
+}
+
+.eventEditForm input:focus,
+.eventEditForm textarea:focus,
+.eventEditForm select:focus {
+  border-color: #c49a43;
+
+  box-shadow:
+    0 0 0 3px rgba(196, 154, 67, 0.1);
+}
+
+.eventEditForm textarea {
+  resize: vertical;
+}
+
+.eventFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+/* ========================================
+   ACTIVE CHECKBOX
+======================================== */
+
+.eventActiveCheckbox {
+  flex-direction: row !important;
+  align-items: flex-start;
+
+  padding: 15px;
+
+  border: 1px solid #e0e0dd;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.eventActiveCheckbox input {
+  width: auto;
+
+  margin-top: 3px;
+}
+
+.eventActiveCheckbox strong,
+.eventActiveCheckbox span {
+  display: block;
+}
+
+.eventActiveCheckbox strong {
+  font-size: 11px;
+}
+
+.eventActiveCheckbox span {
+  margin-top: 3px;
+
+  color: #999;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+/* ========================================
+   FORM ACTIONS
+======================================== */
+
+.eventFormActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.eventFormActions button {
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.eventCancelButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #666;
+}
+
+.eventSaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 950px) {
+
+  .eventAdminCard {
+    grid-template-columns:
+      110px
+      1fr
+      100px;
+  }
+
+  .eventAdminActions {
+    grid-column: 2 / 4;
+
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .eventsAdminHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .eventsAdminStats {
+    grid-template-columns: 1fr;
+  }
+
+  .eventAdminCard {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .eventAdminActions {
+    grid-column: auto;
+
+    justify-content: flex-start;
+  }
+
+  .eventFormRow {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ========================================
+   SPORTS CALENDAR
+======================================== */
+
+.sportsAdminHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.sportsAdminHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.sportsAdminHeading > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.sportsAddButton {
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #171717;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   STATS
+======================================== */
+
+.sportsAdminStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.sportsAdminStats > div {
+  padding: 18px 20px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 7px;
+}
+
+.sportsAdminStats span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sportsAdminStats strong {
+  font-size: 27px;
+}
+
+
+/* ========================================
+   PANEL
+======================================== */
+
+.sportsAdminPanel {
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+
+/* ========================================
+   LEAGUE FILTERS
+======================================== */
+
+.sportsLeagueFilters {
+  display: flex;
+  gap: 7px;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #e7e7e4;
+
+  overflow-x: auto;
+}
+
+.sportsLeagueButton {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 11px;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #666;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.sportsLeagueButton span {
+  min-width: 19px;
+
+  padding: 2px 5px;
+
+  border-radius: 20px;
+
+  background: #eee;
+
+  font-size: 8px;
+
+  text-align: center;
+}
+
+.sportsLeagueButton.active {
+  border-color: #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+.sportsLeagueButton.active span {
+  background: #d4a84f;
+  color: #171717;
+}
+
+
+/* ========================================
+   GAME LIST
+======================================== */
+
+.sportsAdminList {
+  padding: 0 24px;
+}
+
+.sportsAdminGame {
+  display: grid;
+
+  grid-template-columns:
+    80px
+    minmax(260px, 1fr)
+    100px
+    235px;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 21px 0;
+
+  border-bottom: 1px solid #ececea;
+
+  transition: opacity 0.2s ease;
+}
+
+.sportsAdminGame:last-child {
+  border-bottom: none;
+}
+
+.sportsAdminGame.inactive {
+  opacity: 0.5;
+}
+
+
+/* ========================================
+   LEAGUE
+======================================== */
+
+.sportsAdminLeague span {
+  display: inline-block;
+
+  padding: 7px 9px;
+
+  border-radius: 4px;
+
+  background: #171717;
+  color: #d4a84f;
+
+  font-size: 9px;
+  font-weight: 900;
+}
+
+
+/* ========================================
+   GAME INFO
+======================================== */
+
+.sportsAdminGameTitle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.sportsAdminGameTitle h3 {
+  margin: 0;
+
+  color: #222;
+
+  font-size: 14px;
+}
+
+.sportsFeaturedBadge {
+  display: inline-block;
+
+  padding: 4px 7px;
+
+  border-radius: 20px;
+
+  background: #fff1c9;
+  color: #8a6415;
+
+  font-size: 7px;
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+.sportsAdminMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 7px;
+
+  color: #888;
+
+  font-size: 10px;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.sportsStatusButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.sportsStatusButton > span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.sportsStatusButton.active {
+  color: #2c7a40;
+}
+
+.sportsStatusButton.active > span {
+  background: #36a653;
+}
+
+.sportsStatusButton.inactive {
+  color: #999;
+}
+
+.sportsStatusButton.inactive > span {
+  background: #aaa;
+}
+
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.sportsAdminActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.sportsAdminActions button {
+  padding: 7px 9px;
+
+  border-radius: 4px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.sportsFeatureButton {
+  border: 1px solid #d7c38e;
+
+  background: #fffaf0;
+  color: #8b6b22;
+}
+
+.sportsFeatureButton.selected {
+  background: #d4a84f;
+  color: #171717;
+}
+
+.sportsEditButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #555;
+}
+
+.sportsDeleteButton {
+  border: 1px solid #efcccc;
+
+  background: #fff;
+  color: #b23b3b;
+}
+
+
+/* ========================================
+   EMPTY
+======================================== */
+
+.sportsEmpty {
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+.sportsEmpty h3 {
+  margin: 0 0 5px;
+}
+
+.sportsEmpty p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   MODAL
+======================================== */
+
+.sportsModalBackdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.62);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sportsModal {
+  width: min(650px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.sportsModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.sportsModalHeader h2 {
+  margin: 4px 0 0;
+
+  font-size: 22px;
+}
+
+.sportsModalClose {
+  border: none;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.sportsEditForm {
+  padding: 27px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sportsEditForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.sportsEditForm input,
+.sportsEditForm select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #222;
+
+  font: inherit;
+
+  outline: none;
+}
+
+.sportsEditForm input:focus,
+.sportsEditForm select:focus {
+  border-color: #c49a43;
+
+  box-shadow:
+    0 0 0 3px rgba(196, 154, 67, 0.1);
+}
+
+.sportsFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+/* ========================================
+   CHECKBOXES
+======================================== */
+
+.sportsCheckbox {
+  flex-direction: row !important;
+  align-items: flex-start;
+
+  padding: 15px;
+
+  border: 1px solid #e0e0dd;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.sportsCheckbox input {
+  width: auto;
+
+  margin-top: 3px;
+}
+
+.sportsCheckbox strong,
+.sportsCheckbox span {
+  display: block;
+}
+
+.sportsCheckbox strong {
+  font-size: 11px;
+}
+
+.sportsCheckbox span {
+  margin-top: 3px;
+
+  color: #999;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+/* ========================================
+   FORM ACTIONS
+======================================== */
+
+.sportsFormActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.sportsFormActions button {
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.sportsCancelButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #666;
+}
+
+.sportsSaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1050px) {
+
+  .sportsAdminGame {
+    grid-template-columns:
+      70px
+      1fr
+      100px;
+  }
+
+  .sportsAdminActions {
+    grid-column: 2 / 4;
+
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .sportsAdminHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sportsAdminStats {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .sportsAdminGame {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+  .sportsAdminActions {
+    grid-column: auto;
+
+    justify-content: flex-start;
+  }
+
+  .sportsFormRow {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ========================================
+   SPORTS API-STYLE FEED
+======================================== */
+
+.sportsFeedStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d8e8dc;
+  border-radius: 20px;
+
+  background: #f4fbf5;
+  color: #39764a;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.sportsFeedStatus > span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #45a85e;
+}
+
+
+/* ========================================
+   VIEW TABS
+======================================== */
+
+.sportsViewTabs {
+  display: flex;
+  gap: 6px;
+
+  padding: 15px 20px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.sportsViewTab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.sportsViewTab > span {
+  min-width: 20px;
+
+  padding: 3px 6px;
+
+  border-radius: 20px;
+
+  background: #eee;
+  color: #555;
+
+  font-size: 8px;
+
+  text-align: center;
+}
+
+.sportsViewTab.active {
+  background: #171717;
+  color: #fff;
+}
+
+.sportsViewTab.active > span {
+  background: #d4a84f;
+  color: #171717;
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.sportsAdminFilters {
+  display: flex;
+  gap: 12px;
+
+  padding: 16px 20px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.sportsAdminFilters input,
+.sportsAdminFilters select {
+  padding: 10px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #333;
+
+  outline: none;
+}
+
+.sportsAdminFilters input {
+  flex: 1;
+}
+
+.sportsAdminFilters select {
+  min-width: 170px;
+}
+
+.sportsAdminFilters input:focus,
+.sportsAdminFilters select:focus {
+  border-color: #c49a43;
+}
+
+
+/* ========================================
+   TABLE HEADER
+======================================== */
+
+.sportsFeedHeader {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 2fr)
+    minmax(130px, 0.8fr)
+    100px
+    145px
+    115px;
+
+  gap: 15px;
+
+  padding: 12px 20px;
+
+  background: #fafaf8;
+
+  border-bottom: 1px solid #e7e7e4;
+
+  color: #999;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   GAME ROW
+======================================== */
+
+.sportsFeedList {
+  padding: 0 20px;
+}
+
+.sportsFeedGame {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 2fr)
+    minmax(130px, 0.8fr)
+    100px
+    145px
+    115px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 105px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #ececea;
+}
+
+.sportsFeedGame:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================
+   MATCHUP
+======================================== */
+
+.sportsFeedMatchup {
+  min-width: 0;
+}
+
+.sportsFeedLeague {
+  display: inline-block;
+
+  margin-bottom: 7px;
+
+  padding: 4px 7px;
+
+  border-radius: 4px;
+
+  background: #171717;
+  color: #d4a84f;
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.sportsFeedMatchup > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  color: #222;
+
+  font-size: 12px;
+}
+
+.sportsAt {
+  color: #aaa;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.sportsFeedMatchup small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #999;
+
+  font-size: 9px;
+}
+
+
+/* ========================================
+   DATE
+======================================== */
+
+.sportsFeedDate strong,
+.sportsFeedDate span {
+  display: block;
+}
+
+.sportsFeedDate strong {
+  color: #444;
+
+  font-size: 10px;
+}
+
+.sportsFeedDate span {
+  margin-top: 4px;
+
+  color: #999;
+
+  font-size: 9px;
+}
+
+
+/* ========================================
+   CHANNEL
+======================================== */
+
+.sportsFeedChannel {
+  color: #666;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* ========================================
+   WEBSITE TOGGLE
+======================================== */
+
+.sportsFeedVisibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sportsToggle {
+  position: relative;
+
+  width: 38px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #d5d5d2;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.sportsToggle > span {
+  position: absolute;
+
+  top: 3px;
+  left: 3px;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.2s ease;
+}
+
+.sportsToggle.active {
+  background: #3b9852;
+}
+
+.sportsToggle.active > span {
+  transform: translateX(17px);
+}
+
+.sportsFeedVisibility > span {
+  color: #777;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   FEATURED STAR
+======================================== */
+
+.sportsFeedFeature {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sportsStar {
+  width: 31px;
+  height: 31px;
+
+  border: 1px solid #ddd;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #bbb;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.sportsStar.active {
+  border-color: #d4a84f;
+
+  background: #fff6df;
+  color: #c6952e;
+}
+
+.sportsFeedFeature > span {
+  color: #777;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .sportsFeedHeader {
+    display: none;
+  }
+
+  .sportsFeedGame {
+    grid-template-columns:
+      minmax(250px, 1fr)
+      120px
+      100px;
+  }
+
+  .sportsFeedVisibility,
+  .sportsFeedFeature {
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .sportsAdminFilters {
+    flex-direction: column;
+  }
+
+  .sportsAdminFilters select {
+    width: 100%;
+  }
+
+  .sportsFeedGame {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+}
+
+/* ========================================
+   GALLERY MANAGEMENT
+======================================== */
+
+.galleryAdminHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.galleryAdminHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.galleryAdminHeading > div > p:last-child {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.galleryAddButton {
+  padding: 12px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #171717;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* STATS */
+
+.galleryAdminStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.galleryAdminStats > div {
+  padding: 18px 20px;
+
+  background: white;
+
+  border: 1px solid #e1e1df;
+  border-radius: 7px;
+}
+
+.galleryAdminStats span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.galleryAdminStats strong {
+  font-size: 27px;
+}
+
+
+/* PANEL */
+
+.galleryAdminPanel {
+  background: white;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.galleryAdminFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.galleryFilterButton {
+  padding: 8px 11px;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  background: white;
+  color: #666;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.galleryFilterButton.active {
+  border-color: #171717;
+
+  background: #171717;
+  color: white;
+}
+
+
+/* GRID */
+
+.galleryAdminGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  padding: 20px;
+}
+
+.galleryAdminCard {
+  overflow: hidden;
+
+  border: 1px solid #dededb;
+  border-radius: 7px;
+
+  background: white;
+}
+
+.galleryAdminCard.hidden {
+  opacity: 0.5;
+}
+
+.galleryAdminPreview {
+  position: relative;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background: #111;
+}
+
+.galleryAdminPreview img,
+.galleryAdminPreview video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.galleryMediaType {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  padding: 5px 7px;
+
+  border-radius: 3px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+
+  font-size: 7px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+}
+
+.galleryAdminFeatured {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  padding: 5px 7px;
+
+  border-radius: 3px;
+
+  background: #d4a84f;
+  color: #171717;
+
+  font-size: 7px;
+  font-weight: 900;
+}
+
+
+/* CARD BODY */
+
+.galleryAdminCardBody {
+  padding: 15px;
+}
+
+.galleryAdminCategory {
+  margin-bottom: 5px;
+
+  color: #b08736;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.galleryAdminCardBody h3 {
+  margin: 0 0 7px;
+
+  font-size: 14px;
+}
+
+.galleryAdminPath {
+  overflow: hidden;
+
+  margin: 0 0 14px;
+
+  color: #aaa;
+
+  font-size: 8px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* CONTROLS */
+
+.galleryAdminControls {
+  display: flex;
+  gap: 6px;
+
+  margin-bottom: 12px;
+}
+
+.galleryAdminControls button {
+  padding: 6px 8px;
+
+  border-radius: 4px;
+
+  background: white;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.galleryVisibility {
+  border: 1px solid #ddd;
+
+  color: #999;
+}
+
+.galleryVisibility.active {
+  border-color: #b9ddc1;
+
+  background: #f3faf5;
+  color: #367947;
+}
+
+.galleryFeature {
+  border: 1px solid #ddd;
+
+  color: #999;
+}
+
+.galleryFeature.active {
+  border-color: #dfc988;
+
+  background: #fff8e6;
+  color: #926e20;
+}
+
+
+/* ACTIONS */
+
+.galleryAdminActions {
+  display: flex;
+  gap: 7px;
+}
+
+.galleryAdminActions button {
+  flex: 1;
+
+  padding: 8px;
+
+  border-radius: 4px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.galleryEditButton {
+  border: 1px solid #ccc;
+
+  background: white;
+  color: #555;
+}
+
+.galleryDeleteButton {
+  border: 1px solid #efcccc;
+
+  background: white;
+  color: #b23b3b;
+}
+
+
+/* NOTICE */
+
+.galleryAdminNotice {
+  margin-top: 18px;
+
+  padding: 16px 18px;
+
+  border: 1px solid #e3d7b9;
+  border-radius: 6px;
+
+  background: #fffaf0;
+}
+
+.galleryAdminNotice strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #705826;
+
+  font-size: 11px;
+}
+
+.galleryAdminNotice p {
+  margin: 0;
+
+  color: #8b7954;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+
+/* EMPTY */
+
+.galleryAdminEmpty {
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+.galleryAdminEmpty p {
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* MODAL */
+
+.galleryModalBackdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 5000;
+
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.galleryModal {
+  width: min(650px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: white;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+.galleryModalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 24px 27px;
+
+  border-bottom: 1px solid #e7e7e4;
+}
+
+.galleryModalHeader h2 {
+  margin: 4px 0 0;
+
+  font-size: 22px;
+}
+
+.galleryModalClose {
+  border: none;
+
+  background: transparent;
+  color: #777;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+
+/* FORM */
+
+.galleryEditForm {
+  padding: 27px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.galleryEditForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.galleryEditForm input,
+.galleryEditForm select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: white;
+
+  font: inherit;
+
+  outline: none;
+}
+
+.galleryEditForm input:focus,
+.galleryEditForm select:focus {
+  border-color: #c49a43;
+}
+
+.galleryEditForm label small {
+  color: #999;
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.galleryFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+/* PREVIEW */
+
+.galleryFormPreview {
+  padding: 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  background: #fafafa;
+}
+
+.galleryFormPreview > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #999;
+
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.galleryFormPreview img,
+.galleryFormPreview video {
+  display: block;
+
+  width: 100%;
+  max-height: 260px;
+
+  object-fit: contain;
+
+  border-radius: 4px;
+
+  background: #111;
+}
+
+.galleryNoPreview {
+  padding: 50px 20px;
+
+  background: #eee;
+  color: #999;
+
+  text-align: center;
+
+  font-size: 10px;
+}
+
+
+/* CHECKBOX */
+
+.galleryCheckbox {
+  flex-direction: row !important;
+  align-items: flex-start;
+
+  padding: 14px;
+
+  border: 1px solid #e0e0dd;
+  border-radius: 6px;
+}
+
+.galleryCheckbox input {
+  width: auto;
+
+  margin-top: 3px;
+}
+
+.galleryCheckbox strong,
+.galleryCheckbox span {
+  display: block;
+}
+
+.galleryCheckbox span {
+  margin-top: 3px;
+
+  color: #999;
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+
+/* FORM BUTTONS */
+
+.galleryFormActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.galleryFormActions button {
+  padding: 10px 15px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.galleryCancelButton {
+  border: 1px solid #ccc;
+
+  background: white;
+  color: #666;
+}
+
+.gallerySaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .galleryAdminGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galleryAdminStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .galleryAdminHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .galleryAdminGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .galleryAdminStats {
+    grid-template-columns: 1fr;
+  }
+
+  .galleryFormRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   RESTAURANT SETTINGS
+======================================== */
+
+.settingsHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.settingsHeading h2 {
+  margin: 5px 0 6px;
+  font-size: 32px;
+}
+
+.settingsHeading > div > p:last-child {
+  margin: 0;
+
+  color: #777;
+  font-size: 14px;
+}
+
+.settingsStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #e2d6b8;
+  border-radius: 20px;
+
+  background: #fffaf0;
+  color: #80642c;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.settingsStatus > span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #d4a84f;
+}
+
+
+/* ========================================
+   SETTINGS FORM
+======================================== */
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.settingsCard {
+  overflow: hidden;
+
+  background: #fff;
+
+  border: 1px solid #e1e1df;
+  border-radius: 8px;
+}
+
+.settingsCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 19px 22px;
+
+  border-bottom: 1px solid #e8e8e5;
+}
+
+.settingsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  border-radius: 6px;
+
+  background: #171717;
+  color: #d4a84f;
+
+  font-size: 14px;
+}
+
+.settingsCardHeader h3 {
+  margin: 0 0 3px;
+
+  color: #222;
+  font-size: 14px;
+}
+
+.settingsCardHeader p {
+  margin: 0;
+
+  color: #999;
+  font-size: 10px;
+}
+
+.settingsCardBody {
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+.settingsCardBody label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  color: #444;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.settingsCardBody input {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d7d7d4;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #222;
+
+  font: inherit;
+
+  outline: none;
+}
+
+.settingsCardBody input:focus {
+  border-color: #c49a43;
+
+  box-shadow:
+    0 0 0 3px rgba(196, 154, 67, 0.1);
+}
+
+.settingsCardBody label small {
+  color: #999;
+
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.settingsFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+
+/* ========================================
+   LOCATION PREVIEW
+======================================== */
+
+.settingsLocationPreview {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 15px;
+
+  border: 1px solid #e2e2df;
+  border-radius: 6px;
+
+  background: #fafaf8;
+}
+
+.settingsLocationPin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #171717;
+  color: #d4a84f;
+}
+
+.settingsLocationPreview strong,
+.settingsLocationPreview span {
+  display: block;
+}
+
+.settingsLocationPreview strong {
+  margin-bottom: 4px;
+
+  color: #333;
+
+  font-size: 11px;
+}
+
+.settingsLocationPreview span {
+  color: #888;
+
+  font-size: 9px;
+}
+
+
+/* ========================================
+   HOURS
+======================================== */
+
+.settingsHours {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.settingsHoursRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 36px;
+  gap: 9px;
+
+  align-items: center;
+}
+
+.settingsRemoveHours {
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #edcccc;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #b44343;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.settingsAddHours {
+  align-self: flex-start;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d5d5d2;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #555;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* ========================================
+   PREVIEW
+======================================== */
+
+.settingsPreview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.settingsPreview > div {
+  padding: 20px 22px;
+
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.settingsPreview > div:nth-child(2n) {
+  border-right: none;
+}
+
+.settingsPreview > div:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.settingsPreview span,
+.settingsPreview strong {
+  display: block;
+}
+
+.settingsPreview span {
+  margin-bottom: 7px;
+
+  color: #b08736;
+
+  font-size: 8px;
+  font-weight: 900;
+
+  letter-spacing: 1px;
+}
+
+.settingsPreview strong {
+  color: #333;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   SAVE BAR
+======================================== */
+
+.settingsSaveBar {
+  position: sticky;
+  bottom: 15px;
+
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 15px 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  box-shadow:
+    0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.settingsSaveBar > div:first-child {
+  color: #888;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.settingsSaved {
+  color: #348049;
+}
+
+.settingsSaveActions {
+  display: flex;
+  gap: 8px;
+}
+
+.settingsSaveActions button {
+  padding: 10px 14px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.settingsResetButton {
+  border: 1px solid #ccc;
+
+  background: #fff;
+  color: #666;
+}
+
+.settingsSaveButton {
+  border: 1px solid #171717;
+
+  background: #171717;
+  color: #fff;
+}
+
+
+/* ========================================
+   NOTICE
+======================================== */
+
+.settingsNotice {
+  margin-top: 18px;
+
+  padding: 16px 18px;
+
+  border: 1px solid #e3d7b9;
+  border-radius: 6px;
+
+  background: #fffaf0;
+}
+
+.settingsNotice strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #705826;
+
+  font-size: 11px;
+}
+
+.settingsNotice p {
+  margin: 0;
+
+  color: #8b7954;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 750px) {
+
+  .settingsHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .settingsFormRow {
+    grid-template-columns: 1fr;
+  }
+
+  .settingsHoursRow {
+    grid-template-columns: 1fr;
+  }
+
+  .settingsRemoveHours {
+    width: 100%;
+  }
+
+  .settingsPreview {
+    grid-template-columns: 1fr;
+  }
+
+  .settingsPreview > div {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .settingsPreview > div:nth-last-child(-n + 2) {
+    border-bottom: 1px solid #eee;
+  }
+
+  .settingsPreview > div:last-child {
+    border-bottom: none;
+  }
+
+  .settingsSaveBar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .settingsSaveActions {
+    width: 100%;
+  }
+
+  .settingsSaveActions button {
+    flex: 1;
+  }
+
+}
